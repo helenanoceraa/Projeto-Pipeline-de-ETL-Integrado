@@ -1,0 +1,1 @@
+# An-lise-de-Desmatamento-e-Degrada-o-Ambiental-na-Amaz-nia-Brasileira
