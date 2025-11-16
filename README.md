@@ -32,5 +32,10 @@ O pipeline processa dados das seguintes fontes:
 * **INPE|Terra Brasilis: Taxas de desmatamento acumulada por ano - Amazonia Legal**
     * **Descrição:** Área queimada na Amazonia legal por mês
 
+* **[Clique aqui para baixar os dados necessários (Google Drive)]((https://drive.google.com/drive/folders/1--hBqi_MxyYiKcM3Wp72yMWimbVlBOb6?usp=sharing)](https://drive.google.com/drive/folders/1--hBqi_MxyYiKcM3Wp72yMWimbVlBOb6?usp=sharing))**
+
+## 🚀 Como Executar o Projeto
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uTfQqEzOkbX70TZC4J7AnVvRgYlmE1AK?usp=sharing)
 
 ---
