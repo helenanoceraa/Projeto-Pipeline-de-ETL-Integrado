@@ -42,8 +42,7 @@ def buscar_id_localidade(conexao, estado):
     return resultado[0] if resultado else None
 
 
-def carregar_fato_desmatamento(caminho_csv='data/silver/deforestation_silver_layer.csv',
-                               caminho_db='db/desmatamento.db'):
+def carregar_fato_desmatamento(caminho_csv, caminho_db):
     """
     Carrega a tabela fato de desmatamento no Data Warehouse
     Mapeia as chaves estrangeiras das dimensões e insere os dados

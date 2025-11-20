@@ -6,8 +6,7 @@ import pandas as pd
 from utils import conectar_banco, ler_camada_silver, criar_tabelas, obter_regiao_por_estado, contar_registros_tabela
 
 
-def carregar_dim_localidade(caminho_csv='data/silver/deforestation_silver_layer.csv',
-                            caminho_db='db/desmatamento.db'):
+def carregar_dim_localidade(caminho_csv, caminho_db):
     """
     Carrega a dimensão de localidade no Data Warehouse
     Insere apenas estados que ainda não existem no banco (incremental)

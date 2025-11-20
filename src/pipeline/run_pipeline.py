@@ -16,17 +16,23 @@ from load_dim_localidade import carregar_dim_localidade
 from load_fato_desmatamento import carregar_fato_desmatamento
 
 
-def validar_arquivos():
+# Define o caminho raiz do projeto (a pasta que contém 'src', 'data', etc.)
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+
+
+def validar_arquivos(caminho_csv):
     """
     Valida se todos os arquivos necessários existem antes de começar
+
+    Args:
+        caminho_csv: Caminho para o arquivo Silver
 
     Returns:
         True se tudo OK, False se houver problema
     """
     import logging
 
-    # Verifica se o CSV Silver existe
-    caminho_silver = Path('data/silver/deforestation_silver_layer.csv')
+    caminho_silver = Path(caminho_csv)
 
     if not caminho_silver.exists():
         logging.error(f"❌ ERRO: Arquivo Silver não encontrado!")
@@ -38,7 +44,7 @@ def validar_arquivos():
     return True
 
 
-def validar_integridade_dados(caminho_db='db/desmatamento.db'):
+def validar_integridade_dados(caminho_db):
     """
     Faz checagens básicas de integridade dos dados carregados
 
@@ -128,8 +134,7 @@ def validar_integridade_dados(caminho_db='db/desmatamento.db'):
     return todas_ok
 
 
-def executar_pipeline(caminho_csv='data/silver/deforestation_silver_layer.csv',
-                      caminho_db='db/desmatamento.db'):
+def executar_pipeline(caminho_csv, caminho_db):
     """
     Executa toda a pipeline de carga do Data Warehouse
 
@@ -157,7 +162,7 @@ def executar_pipeline(caminho_csv='data/silver/deforestation_silver_layer.csv',
     try:
         # ETAPA 1: Validação dos arquivos
         logging.info("📋 ETAPA 1/4: Validando arquivos necessários...")
-        if not validar_arquivos():
+        if not validar_arquivos(caminho_csv):
             return False
         logging.info("")
 
@@ -238,7 +243,11 @@ if __name__ == "__main__":
     logger = configurar_logs()
 
     # Executa a pipeline
-    sucesso = executar_pipeline()
+    caminho_csv_silver = PROJECT_ROOT / 'data' / 'silver' / 'deforestation_silver_layer.csv'
+    caminho_banco_dados = PROJECT_ROOT / 'db' / 'desmatamento.db'
+
+    sucesso = executar_pipeline(caminho_csv=caminho_csv_silver,
+                                caminho_db=caminho_banco_dados)
 
     # Retorna código de saída apropriado
     sys.exit(0 if sucesso else 1)
