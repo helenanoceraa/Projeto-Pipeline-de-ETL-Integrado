@@ -1,0 +1,235 @@
+ano;safra_ocorrido;estado;regiao;tipo_desmatamento;qtd_ocorrencias;total_area_desmatada_km
+2024;2024-07;AC;Norte;Corte Raso com Solo Exposto;12896;997,75
+2024;2024-07;AC;Norte;Corte Raso com Vegetação;3492;195,36
+2024;2024-07;AC;Norte;Desmatamento por Degradação Progressiva;2416;128,33
+2024;2024-08;AC;Norte;Corte Raso com Solo Exposto;3572;286,81
+2024;2024-08;AC;Norte;Corte Raso com Vegetação;828;31,87
+2024;2024-08;AC;Norte;Desmatamento por Degradação Progressiva;160;5,28
+2024;2024-07;AM;Norte;Corte Raso com Solo Exposto;6292;1560,45
+2024;2024-07;AM;Norte;Corte Raso com Vegetação;1196;105,68
+2024;2024-07;AM;Norte;Desmatamento por Degradação Progressiva;1360;166,95
+2024;2024-07;AM;Norte;Mineração;40;2,04
+2024;2024-08;AM;Norte;Corte Raso com Solo Exposto;13960;1754,58
+2024;2024-08;AM;Norte;Corte Raso com Vegetação;1816;93,28
+2024;2024-08;AM;Norte;Desmatamento por Degradação Progressiva;4840;722,66
+2024;2024-08;AM;Norte;Mineração;612;35,97
+2024;2024-08;AP;Norte;Corte Raso com Solo Exposto;1240;49,69
+2024;2024-08;AP;Norte;Corte Raso com Vegetação;1056;17,63
+2024;2024-08;AP;Norte;Desmatamento por Degradação Progressiva;572;36,31
+2024;2024-08;AP;Norte;Mineração;768;14,05
+2024;2024-07;MA;Nordeste;Corte Raso com Solo Exposto;860;45,38
+2024;2024-07;MA;Nordeste;Corte Raso com Vegetação;248;9,67
+2024;2024-07;MA;Nordeste;Desmatamento por Degradação Progressiva;204;8,1
+2024;2024-07;MA;Nordeste;Mineração;8;0,25
+2024;2024-08;MA;Nordeste;Corte Raso com Solo Exposto;4132;381,26
+2024;2024-08;MA;Nordeste;Corte Raso com Vegetação;2120;114,2
+2024;2024-08;MA;Nordeste;Desmatamento por Degradação Progressiva;1044;88,25
+2024;2024-07;MT;Centro-Oeste;Corte Raso com Solo Exposto;2568;631,53
+2024;2024-07;MT;Centro-Oeste;Corte Raso com Vegetação;412;257,53
+2024;2024-07;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;2016;1322,03
+2024;2024-07;MT;Centro-Oeste;Mineração;76;1,98
+2024;2024-08;MT;Centro-Oeste;Corte Raso com Solo Exposto;5720;1086,04
+2024;2024-08;MT;Centro-Oeste;Corte Raso com Vegetação;836;156,02
+2024;2024-08;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;4296;1574,22
+2024;2024-08;MT;Centro-Oeste;Floresta Inundada;8;0,81
+2024;2024-08;MT;Centro-Oeste;Mineração;404;71,01
+2024;2024-07;PA;Norte;Corte Raso com Solo Exposto;18060;1558,54
+2024;2024-07;PA;Norte;Corte Raso com Vegetação;9352;704,26
+2024;2024-07;PA;Norte;Desmatamento por Degradação Progressiva;3936;537,71
+2024;2024-07;PA;Norte;Floresta Inundada;8;0,29
+2024;2024-07;PA;Norte;Mineração;1072;42,21
+2024;2024-08;PA;Norte;Corte Raso com Solo Exposto;40508;3755,83
+2024;2024-08;PA;Norte;Corte Raso com Vegetação;9404;859,95
+2024;2024-08;PA;Norte;Desmatamento por Degradação Progressiva;12824;1489,06
+2024;2024-08;PA;Norte;Floresta Inundada;12;1,5
+2024;2024-08;PA;Norte;Mineração;1312;70,22
+2024;2024-07;RO;Norte;Corte Raso com Solo Exposto;2520;247,48
+2024;2024-07;RO;Norte;Corte Raso com Vegetação;668;68,42
+2024;2024-07;RO;Norte;Desmatamento por Degradação Progressiva;1208;265,72
+2024;2024-07;RO;Norte;Mineração;4;0,01
+2024;2024-08;RO;Norte;Corte Raso com Solo Exposto;4724;614,21
+2024;2024-08;RO;Norte;Corte Raso com Vegetação;1072;163,73
+2024;2024-08;RO;Norte;Desmatamento por Degradação Progressiva;1392;148,95
+2024;2024-08;RO;Norte;Mineração;20;1,86
+2024;2024-07;RR;Norte;Corte Raso com Solo Exposto;12;1,17
+2024;2024-07;RR;Norte;Desmatamento por Degradação Progressiva;20;8,51
+2024;2024-08;RR;Norte;Corte Raso com Solo Exposto;7240;853,33
+2024;2024-08;RR;Norte;Corte Raso com Vegetação;1824;291,66
+2024;2024-08;RR;Norte;Desmatamento por Degradação Progressiva;3404;636,34
+2024;2024-08;RR;Norte;Mineração;8;0,11
+2024;2024-07;TO;Norte;Corte Raso com Solo Exposto;220;9,3
+2024;2024-07;TO;Norte;Corte Raso com Vegetação;16;3,14
+2024;2024-07;TO;Norte;Desmatamento por Degradação Progressiva;148;9,7
+2024;2024-08;TO;Norte;Corte Raso com Solo Exposto;40;6,76
+2024;2024-08;TO;Norte;Desmatamento por Degradação Progressiva;4;0,03
+2023;2023-07;AC;Norte;Corte Raso com Solo Exposto;6160;340,75
+2023;2023-07;AC;Norte;Corte Raso com Vegetação;3176;294,52
+2023;2023-07;AC;Norte;Desmatamento por Degradação Progressiva;1764;139,54
+2023;2023-08;AC;Norte;Corte Raso com Solo Exposto;9480;762,81
+2023;2023-08;AC;Norte;Corte Raso com Vegetação;2604;252,23
+2023;2023-08;AC;Norte;Desmatamento por Degradação Progressiva;812;61,96
+2023;2023-07;AM;Norte;Corte Raso com Solo Exposto;5680;1056,43
+2023;2023-07;AM;Norte;Corte Raso com Vegetação;2964;671,79
+2023;2023-07;AM;Norte;Desmatamento por Degradação Progressiva;936;111,93
+2023;2023-07;AM;Norte;Floresta Inundada;4;0,16
+2023;2023-08;AM;Norte;Corte Raso com Solo Exposto;11248;2352,44
+2023;2023-08;AM;Norte;Corte Raso com Vegetação;2544;669,58
+2023;2023-08;AM;Norte;Desmatamento por Degradação Progressiva;964;145,01
+2023;2023-08;AM;Norte;Floresta Inundada;60;4,41
+2023;2023-08;AM;Norte;Mineração;1120;91,35
+2023;2023-09;AM;Norte;Corte Raso com Solo Exposto;1492;110,58
+2023;2023-09;AM;Norte;Corte Raso com Vegetação;180;3,38
+2023;2023-09;AM;Norte;Desmatamento por Degradação Progressiva;128;3,11
+2023;2023-09;AM;Norte;Floresta Inundada;8;0,01
+2023;2023-09;AM;Norte;Mineração;220;18,04
+2023;2023-08;AP;Norte;Corte Raso com Solo Exposto;444;21,4
+2023;2023-08;AP;Norte;Corte Raso com Vegetação;104;2,97
+2023;2023-08;AP;Norte;Desmatamento por Degradação Progressiva;4;0,09
+2023;2023-08;AP;Norte;Mineração;308;5,66
+2023;2023-09;AP;Norte;Corte Raso com Solo Exposto;696;27,2
+2023;2023-09;AP;Norte;Corte Raso com Vegetação;24;0,31
+2023;2023-09;AP;Norte;Desmatamento por Degradação Progressiva;48;2,02
+2023;2023-09;AP;Norte;Mineração;36;1,48
+2023;2023-10;AP;Norte;Corte Raso com Solo Exposto;72;1,84
+2023;2023-07;MA;Nordeste;Corte Raso com Solo Exposto;24;6,61
+2023;2023-07;MA;Nordeste;Corte Raso com Vegetação;4;0,93
+2023;2023-08;MA;Nordeste;Corte Raso com Solo Exposto;2532;353,74
+2023;2023-08;MA;Nordeste;Corte Raso com Vegetação;916;104,8
+2023;2023-08;MA;Nordeste;Desmatamento por Degradação Progressiva;164;15,35
+2023;2023-09;MA;Nordeste;Corte Raso com Solo Exposto;1288;107,16
+2023;2023-09;MA;Nordeste;Corte Raso com Vegetação;328;27,19
+2023;2023-09;MA;Nordeste;Desmatamento por Degradação Progressiva;60;6,6
+2023;2023-09;MA;Nordeste;Floresta Inundada;4;0,18
+2023;2023-09;MA;Nordeste;Mineração;104;8,05
+2023;2023-07;MT;Centro-Oeste;Corte Raso com Solo Exposto;6560;1613,22
+2023;2023-07;MT;Centro-Oeste;Corte Raso com Vegetação;1584;750,99
+2023;2023-07;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;4000;2820,02
+2023;2023-07;MT;Centro-Oeste;Mineração;172;6,88
+2023;2023-08;MT;Centro-Oeste;Corte Raso com Solo Exposto;4096;1011,57
+2023;2023-08;MT;Centro-Oeste;Corte Raso com Vegetação;912;519,66
+2023;2023-08;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;2568;881,83
+2023;2023-08;MT;Centro-Oeste;Mineração;136;16,27
+2023;2023-07;PA;Norte;Corte Raso com Solo Exposto;16836;1567,8
+2023;2023-07;PA;Norte;Corte Raso com Vegetação;10964;2078,71
+2023;2023-07;PA;Norte;Desmatamento por Degradação Progressiva;3560;769,54
+2023;2023-07;PA;Norte;Floresta Inundada;4;0,18
+2023;2023-07;PA;Norte;Mineração;520;27,49
+2023;2023-08;PA;Norte;Corte Raso com Solo Exposto;37452;3441,58
+2023;2023-08;PA;Norte;Corte Raso com Vegetação;18648;2235,0
+2023;2023-08;PA;Norte;Desmatamento por Degradação Progressiva;6108;944,25
+2023;2023-08;PA;Norte;Floresta Inundada;4;0,2
+2023;2023-08;PA;Norte;Mineração;2320;159,57
+2023;2023-09;PA;Norte;Corte Raso com Solo Exposto;2668;221,12
+2023;2023-09;PA;Norte;Corte Raso com Vegetação;576;56,58
+2023;2023-09;PA;Norte;Desmatamento por Degradação Progressiva;432;25,43
+2023;2023-09;PA;Norte;Mineração;108;5,41
+2023;2023-10;PA;Norte;Corte Raso com Solo Exposto;16;1,57
+2023;2023-07;RO;Norte;Corte Raso com Solo Exposto;8624;1127,01
+2023;2023-07;RO;Norte;Corte Raso com Vegetação;4500;945,16
+2023;2023-07;RO;Norte;Desmatamento por Degradação Progressiva;2864;349,13
+2023;2023-07;RO;Norte;Mineração;40;1,09
+2023;2023-08;RO;Norte;Corte Raso com Solo Exposto;3160;534,01
+2023;2023-08;RO;Norte;Corte Raso com Vegetação;716;136,52
+2023;2023-08;RO;Norte;Desmatamento por Degradação Progressiva;644;84,01
+2023;2023-08;RO;Norte;Floresta Inundada;4;0,13
+2023;2023-08;RO;Norte;Mineração;8;0,27
+2023;2023-08;RR;Norte;Corte Raso com Solo Exposto;3692;408,19
+2023;2023-08;RR;Norte;Corte Raso com Vegetação;1608;185,25
+2023;2023-08;RR;Norte;Desmatamento por Degradação Progressiva;356;44,83
+2023;2023-09;RR;Norte;Corte Raso com Solo Exposto;2800;305,83
+2023;2023-09;RR;Norte;Corte Raso com Vegetação;1064;132,23
+2023;2023-09;RR;Norte;Desmatamento por Degradação Progressiva;240;24,08
+2023;2023-09;RR;Norte;Mineração;112;2,42
+2023;2023-10;RR;Norte;Corte Raso com Solo Exposto;8;0,8
+2023;2023-10;RR;Norte;Desmatamento por Degradação Progressiva;4;0,42
+2023;2023-07;TO;Norte;Corte Raso com Vegetação;4;0,32
+2023;2023-08;TO;Norte;Corte Raso com Solo Exposto;224;17,53
+2023;2023-08;TO;Norte;Corte Raso com Vegetação;60;3,96
+2023;2023-08;TO;Norte;Desmatamento por Degradação Progressiva;128;6,92
+2022;2022-07;AC;Norte;Corte Raso com Solo Exposto;2520;194,13
+2022;2022-07;AC;Norte;Corte Raso com Vegetação;932;35,14
+2022;2022-07;AC;Norte;Desmatamento por Degradação Progressiva;116;5,72
+2022;2022-08;AC;Norte;Corte Raso com Solo Exposto;29480;3056,23
+2022;2022-08;AC;Norte;Corte Raso com Vegetação;8828;633,49
+2022;2022-08;AC;Norte;Desmatamento por Degradação Progressiva;1236;96,95
+2022;2022-09;AC;Norte;Corte Raso com Solo Exposto;20;1,78
+2022;2022-07;AM;Norte;Corte Raso com Solo Exposto;4468;1800,82
+2022;2022-07;AM;Norte;Corte Raso com Vegetação;1284;522,06
+2022;2022-07;AM;Norte;Desmatamento por Degradação Progressiva;296;44,04
+2022;2022-07;AM;Norte;Mineração;28;6,87
+2022;2022-08;AM;Norte;Corte Raso com Solo Exposto;19696;7884,38
+2022;2022-08;AM;Norte;Corte Raso com Vegetação;5796;1255,95
+2022;2022-08;AM;Norte;Desmatamento por Degradação Progressiva;1488;136,27
+2022;2022-08;AM;Norte;Mineração;1012;46,3
+2022;2022-09;AM;Norte;Corte Raso com Solo Exposto;3796;411,1
+2022;2022-09;AM;Norte;Corte Raso com Vegetação;788;33,3
+2022;2022-09;AM;Norte;Desmatamento por Degradação Progressiva;80;8,88
+2022;2022-09;AM;Norte;Mineração;324;28,9
+2022;2022-10;AM;Norte;Corte Raso com Solo Exposto;36;1,55
+2022;2022-10;AM;Norte;Corte Raso com Vegetação;4;0,1
+2022;2022-10;AM;Norte;Mineração;136;10,23
+2022;2022-08;AP;Norte;Corte Raso com Solo Exposto;12;0,12
+2022;2022-08;AP;Norte;Corte Raso com Vegetação;4;0,2
+2022;2022-09;AP;Norte;Corte Raso com Solo Exposto;820;37,85
+2022;2022-09;AP;Norte;Corte Raso com Vegetação;404;8,33
+2022;2022-09;AP;Norte;Desmatamento por Degradação Progressiva;68;1,72
+2022;2022-09;AP;Norte;Mineração;84;5,01
+2022;2022-10;AP;Norte;Corte Raso com Solo Exposto;48;1,65
+2022;2022-10;AP;Norte;Corte Raso com Vegetação;8;0,16
+2022;2022-10;AP;Norte;Desmatamento por Degradação Progressiva;32;1,25
+2022;2022-07;MA;Nordeste;Corte Raso com Solo Exposto;376;56,05
+2022;2022-07;MA;Nordeste;Corte Raso com Vegetação;184;20,37
+2022;2022-08;MA;Nordeste;Corte Raso com Solo Exposto;2132;315,75
+2022;2022-08;MA;Nordeste;Corte Raso com Vegetação;932;98,8
+2022;2022-08;MA;Nordeste;Desmatamento por Degradação Progressiva;332;44,13
+2022;2022-09;MA;Nordeste;Corte Raso com Solo Exposto;624;32,69
+2022;2022-09;MA;Nordeste;Desmatamento por Degradação Progressiva;36;1,35
+2022;2022-09;MA;Nordeste;Mineração;20;0,74
+2022;2022-07;MT;Centro-Oeste;Corte Raso com Solo Exposto;8124;2153,8
+2022;2022-07;MT;Centro-Oeste;Corte Raso com Vegetação;2948;1131,68
+2022;2022-07;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;2876;769,88
+2022;2022-07;MT;Centro-Oeste;Floresta Inundada;4;0,38
+2022;2022-07;MT;Centro-Oeste;Mineração;176;10,0
+2022;2022-08;MT;Centro-Oeste;Corte Raso com Solo Exposto;5560;2219,07
+2022;2022-08;MT;Centro-Oeste;Corte Raso com Vegetação;1408;413,68
+2022;2022-08;MT;Centro-Oeste;Desmatamento por Degradação Progressiva;2488;1219,89
+2022;2022-08;MT;Centro-Oeste;Mineração;148;6,97
+2022;2022-07;PA;Norte;Corte Raso com Solo Exposto;15776;2350,29
+2022;2022-07;PA;Norte;Corte Raso com Vegetação;8648;2074,06
+2022;2022-07;PA;Norte;Desmatamento por Degradação Progressiva;2464;508,06
+2022;2022-07;PA;Norte;Mineração;620;38,61
+2022;2022-08;PA;Norte;Corte Raso com Solo Exposto;36200;5529,04
+2022;2022-08;PA;Norte;Corte Raso com Vegetação;19480;3071,14
+2022;2022-08;PA;Norte;Desmatamento por Degradação Progressiva;2624;373,22
+2022;2022-08;PA;Norte;Mineração;2528;169,44
+2022;2022-09;PA;Norte;Corte Raso com Solo Exposto;14532;2245,92
+2022;2022-09;PA;Norte;Corte Raso com Vegetação;4916;1156,45
+2022;2022-09;PA;Norte;Desmatamento por Degradação Progressiva;716;117,39
+2022;2022-09;PA;Norte;Mineração;92;5,19
+2022;2022-10;PA;Norte;Corte Raso com Solo Exposto;1480;218,0
+2022;2022-10;PA;Norte;Corte Raso com Vegetação;568;246,6
+2022;2022-10;PA;Norte;Desmatamento por Degradação Progressiva;80;7,7
+2022;2022-10;PA;Norte;Mineração;8;0,98
+2022;2022-07;RO;Norte;Corte Raso com Solo Exposto;12376;2538,14
+2022;2022-07;RO;Norte;Corte Raso com Vegetação;6000;1468,69
+2022;2022-07;RO;Norte;Desmatamento por Degradação Progressiva;1328;155,36
+2022;2022-07;RO;Norte;Floresta Inundada;4;0,55
+2022;2022-07;RO;Norte;Mineração;40;1,59
+2022;2022-08;RO;Norte;Corte Raso com Solo Exposto;4356;952,7
+2022;2022-08;RO;Norte;Corte Raso com Vegetação;1076;516,82
+2022;2022-08;RO;Norte;Desmatamento por Degradação Progressiva;1184;159,95
+2022;2022-08;RR;Norte;Corte Raso com Solo Exposto;140;12,8
+2022;2022-08;RR;Norte;Corte Raso com Vegetação;120;6,98
+2022;2022-09;RR;Norte;Corte Raso com Solo Exposto;7164;590,72
+2022;2022-09;RR;Norte;Corte Raso com Vegetação;4728;450,92
+2022;2022-09;RR;Norte;Desmatamento por Degradação Progressiva;552;54,75
+2022;2022-09;RR;Norte;Floresta Inundada;80;2,36
+2022;2022-09;RR;Norte;Mineração;864;52,19
+2022;2022-10;RR;Norte;Corte Raso com Solo Exposto;8;0,47
+2022;2022-10;RR;Norte;Corte Raso com Vegetação;12;1,16
+2022;2022-10;RR;Norte;Desmatamento por Degradação Progressiva;12;0,39
+2022;2022-07;TO;Norte;Corte Raso com Solo Exposto;8;1,52
+2022;2022-07;TO;Norte;Corte Raso com Vegetação;4;1,16
+2022;2022-08;TO;Norte;Corte Raso com Solo Exposto;416;53,98
+2022;2022-08;TO;Norte;Corte Raso com Vegetação;24;3,81
+2022;2022-08;TO;Norte;Desmatamento por Degradação Progressiva;140;5,3

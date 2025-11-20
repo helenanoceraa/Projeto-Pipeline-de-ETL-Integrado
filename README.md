@@ -1,41 +1,161 @@
-# Projeto Pipeline de ETL: Análise de Desmatamento e Degradação na Amazônia
+# 🌳 Pipeline de ETL — Análise de Desmatamento na Amazônia
 
-Este repositório contém o desenvolvimento de um pipeline de ETL (Extract, Transform, Load) integrado, focado na coleta, processamento e disponibilização de dados para análise do desmatamento e da degradação ambiental na Amazônia.
-
----
-
-## 🎯 Problema
-
-O desmatamento da Amazônia Legal é um dos principais desafios socioambientais do Brasil.
-Além do impacto climático e na biodiversidade, a degradação ambiental afeta a saúde das populações locais, o ciclo hidrológico e as emissões de CO₂, gerando implicações diretas para políticas públicas e para os indicadores ESG de grandes organizações.
-O desafio é compreender como o desmatamento evolui ao longo do tempo, identificar as regiões mais críticas, e avaliar a relação entre pressão econômica, população e impacto ambiental.
+Este repositório apresenta o desenvolvimento de um **pipeline ETL (Extract, Transform, Load)** focado em integrar, tratar e disponibilizar dados relacionados ao desmatamento e à degradação ambiental na Amazônia para análises e dashboards.
 
 ---
 
-## 🚀 Objetivo
+## 📖 Visão Geral
 
-Construir um pipeline ETL automatizado que extraia, transforme e carregue dados históricos de desmatamento na Amazônia, consolidando indicadores que apoiem monitoramento, tomada de decisão e políticas sustentáveis.
-O projeto fornecerá uma visualização interativa no Power BI conectada ao banco de dados tratado, permitindo explorar padrões espaciais e temporais do desmatamento.
+### 🎯 Problema de Negócio
+
+O desmatamento na Amazônia Legal é um dos maiores desafios socioambientais do Brasil. Ele impacta diretamente:
+
+* o clima e a biodiversidade
+* o ciclo hidrológico
+* a qualidade de vida das populações locais
+* emissões de CO₂
+* políticas públicas e indicadores ESG
+
+Compreender **como**, **onde** e **em que ritmo** o desmatamento ocorre é essencial para gerar insights estratégicos, monitoramento ambiental e tomada de decisão.
+
+### 🚀 Objetivo do Projeto
+
+Construir e automatizar um **pipeline de dados completo**, capaz de:
+
+* extrair dados brutos (Bronze)
+* limpar, padronizar e consolidar informações (Silver)
+* estruturar um Data Warehouse com tabelas dimensionais e fato (Gold)
+
+O resultado final pode ser consumido por ferramentas como **Power BI**, gerando análises consistentes e confiáveis para estudos ambientais, políticas públicas ou relatórios corporativos.
+
+---
+
+## ⚙️ Instalação e Configuração
+
+### 🔧 Pré-requisitos
+
+* **Python 3.8+**
+* **DBeaver** (ou qualquer cliente SQL)
+* Dados brutos já incluídos no repositório na pasta `data/bronze/`
+
+### 📦 Passo a Passo
+
+1. **Clone o repositório**
+
+```bash
+git clone https://github.com/helenanoceraa/Projeto-Pipeline-de-ETL-Integrado
+cd Projeto-Pipeline-de-ETL-Integrado
+```
+
+2. **Crie e ative o ambiente virtual**
+
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. **Instale as dependências**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Execução do Pipeline
+
+### **1️⃣ Criar a Camada Silver (limpeza e transformação)**
+
+O script abaixo lê os dados brutos da pasta `bronze`, executa as transformações e gera o arquivo `deforestation_silver_layer.csv`.
+
+> Também é possível visualizar o notebook usado na criação inicial do pipeline:
+> [https://colab.research.google.com/drive/1uTfQqEzOkbX70TZC4J7AnVvRgYlmE1AK?usp=sharing](https://colab.research.google.com/drive/1uTfQqEzOkbX70TZC4J7AnVvRgYlmE1AK?usp=sharing)
+
+```bash
+python src/python/extract.py
+```
+
+---
+
+### **2️⃣ Conectar ao Banco SQLite**
+
+Abra o **DBeaver** e conecte-se ao arquivo:
+
+```
+db/desmatamento.db
+```
+
+Ele estará inicialmente vazio — o restante do pipeline irá preenchê-lo.
+
+---
+
+### **3️⃣ Executar o Pipeline de Carga (Data Warehouse)**
+
+Este script cria e popula:
+
+* `DimTempo`
+* `DimLocalidade`
+* `FatoDesmatamento`
+
+```bash
+python src/pipeline/run_pipeline.py
+```
+
+As tabelas aparecerão populadas no DBeaver após a execução.
+
+---
+
+### **4️⃣ Criar View Agregada (Camada Gold)**
+
+Cria a view `vw_desmatamento_agregado`, usada diretamente no BI.
+
+```bash
+python src/pipeline/create_views.py
+```
+
+---
+
+### **5️⃣ Validar a Camada Gold**
+
+Verifica estrutura, criação e existência de dados na view.
+
+```bash
+python src/pipeline/validate_gold_layer.py
+```
+
+---
+
+### **6️⃣ (Opcional) Criar a Camada Gold em Arquivo CSV**
+
+Gera o arquivo:
+
+```
+data/gold/desmatamento_por_ano_estado.csv
+```
+
+```bash
+python src/pipeline/create_gold_layer.py
+```
 
 ---
 
 ## 📊 Fontes de Dados
 
-O pipeline processa dados das seguintes fontes:
+Os dados utilizados provêm do **INPE | Terra Brasilis**, incluindo:
 
-* **INPE|Terra Brasilis: PRODES completo em formato vetorial - GeoPackage**
-    * **Descrição:** Quanto que a Amazonia foi desmatada por ano
-      
-* **INPE|Terra Brasilis: Incremento anual no desmatamento - Shapelife**
-    * **Descrição:** Avisos de desmatamento com o estado, data e área desmatada. 
+### 🔹 PRODES — Dados completos em formato GeoPackage
 
-* **INPE|Terra Brasilis: Taxas de desmatamento acumulada por ano - Amazonia Legal**
-    * **Descrição:** Área queimada na Amazonia legal por mês
+> *Quanto foi desmatado por ano na Amazônia Legal.*
 
-* **[Clique aqui para baixar os dados necessários (Google Drive)](https://drive.google.com/drive/folders/1--hBqi_MxyYiKcM3Wp72yMWimbVlBOb6?usp=sharing)**
+### 🔹 Shapefile — Incremento anual do desmatamento
 
-## 🚀 Como Executar o Projeto
+> *Avisos de desmatamento contendo estado, data e área desmatada.*
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uTfQqEzOkbX70TZC4J7AnVvRgYlmE1AK?usp=sharing)
+### 🔹 Taxas anuais de desmatamento — Amazônia Legal
 
----
+> *Medições acumuladas por ano e indicadores ambientais relacionados.*

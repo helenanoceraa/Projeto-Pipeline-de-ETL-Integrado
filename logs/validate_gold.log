@@ -1,0 +1,13 @@
+[2025-11-20 12:16:55] INFO: ============================================================
+[2025-11-20 12:16:55] INFO: 🔍 VALIDANDO A CAMADA GOLD (VIEW E CSV)
+[2025-11-20 12:16:55] INFO: ============================================================
+[2025-11-20 12:16:55] INFO: 1. Validando a VIEW 'vw_desmatamento_por_ano_estado' no banco de dados...
+[2025-11-20 12:16:55] INFO:    ✅ View 'vw_desmatamento_por_ano_estado' encontrada.
+[2025-11-20 12:16:57] INFO:    ✅ A view contém 234 registros.
+[2025-11-20 12:16:57] INFO: 
+[2025-11-20 12:16:57] INFO: 2. Validando o arquivo CSV 'desmatamento_por_ano_estado.csv'...
+[2025-11-20 12:16:57] INFO:    ✅ Arquivo CSV encontrado.
+[2025-11-20 12:16:57] INFO:    ✅ O arquivo CSV contém 234 registros.
+[2025-11-20 12:16:57] INFO: ------------------------------------------------------------
+[2025-11-20 12:16:57] INFO: ✅ Validação da Camada Gold concluída com sucesso!
+[2025-11-20 12:16:57] INFO: ============================================================
