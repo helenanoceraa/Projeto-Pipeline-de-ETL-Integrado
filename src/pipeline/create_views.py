@@ -5,12 +5,12 @@ import logging
 from pathlib import Path
 
 # Importação absoluta a partir da raiz do pacote 'pipeline'
-from pipeline.utils.db_utils import conectar_banco, configurar_logs
+from utils import conectar_banco, configurar_logs
 
 # --- Construção de Caminhos Absolutos ---
 # Usando pathlib para uma manipulação de caminhos mais moderna e segura.
-# O caminho vai subir 3 níveis a partir do arquivo atual: gold_layer -> pipeline -> src -> PROJECT_ROOT
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+# O caminho vai subir 2 níveis a partir do arquivo atual: pipeline -> src -> PROJECT_ROOT
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 DEFAULT_DB_PATH = PROJECT_ROOT / 'db' / 'desmatamento.db'
 
@@ -40,8 +40,8 @@ def criar_views_gold(caminho_db=DEFAULT_DB_PATH):
         # Query SQL para a view de desmatamento agregado
         query_view = """
         SELECT
-            t.ano, 
-            date(t.data_completa, 'start of month') as safra_ocorrido,  
+            t.ano,
+            strftime('%Y-%m', t.data_completa) as safra_ocorrido,
             l.estado,
             l.regiao,
             CASE 
@@ -52,12 +52,13 @@ def criar_views_gold(caminho_db=DEFAULT_DB_PATH):
                 WHEN LOWER(f.tipo_degradacao) LIKE '%degrada%' THEN 'Desmatamento por Degradação Progressiva'
                 ELSE 'Outros'
             END AS tipo_desmatamento,
-            SUM(CASE WHEN f.area_km IS NOT NULL THEN 1 ELSE 0 END) AS qtd_ocorrencias,
+            -- COUNT(coluna) já ignora nulos e é mais eficiente que SUM(CASE...)
+            COUNT(f.area_km) AS qtd_ocorrencias,
             ROUND(SUM(f.area_km), 2) as total_area_desmatada_km
         FROM FatoDesmatamento f
         JOIN DimTempo t ON f.id_tempo = t.id_tempo
         JOIN DimLocalidade l ON f.id_localidade = l.id_localidade
-        GROUP BY 1, 2, 3, 4, 5
+        GROUP BY t.ano, safra_ocorrido, l.estado, l.regiao, tipo_desmatamento
         """
 
         view_name = "vw_desmatamento_agregado"
