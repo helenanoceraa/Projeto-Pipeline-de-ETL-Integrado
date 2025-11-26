@@ -44,7 +44,7 @@ def criar_views_gold(caminho_db=DEFAULT_DB_PATH):
             strftime('%Y-%m', t.data_completa) as safra_ocorrido,
             l.estado,
             l.regiao,
-             CASE
+     CASE
 			    WHEN f.tipo_degradacao = 'corte raso com solo exposto' THEN 'Corte Raso com Solo Exposto'
 			    WHEN f.tipo_degradacao = 'corte raso com vegetação' THEN 'Corte Raso com Vegetação'
 			    WHEN f.tipo_degradacao = 'desmatamento por degradação progressiva' THEN 'Desmatamento por Degradação Progressiva'
