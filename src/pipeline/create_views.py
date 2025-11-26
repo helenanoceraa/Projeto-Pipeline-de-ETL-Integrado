@@ -44,15 +44,14 @@ def criar_views_gold(caminho_db=DEFAULT_DB_PATH):
             strftime('%Y-%m', t.data_completa) as safra_ocorrido,
             l.estado,
             l.regiao,
-            CASE 
-                WHEN LOWER(f.tipo_degradacao) LIKE '%minera%' OR LOWER(f.tipo_degradacao) LIKE '%garimpo%' THEN 'Mineração'
-                WHEN LOWER(f.tipo_degradacao) LIKE '%solo%' THEN 'Corte Raso com Solo Exposto'
-                WHEN LOWER(f.tipo_degradacao) LIKE '%vegeta%' THEN 'Corte Raso com Vegetação'
-                WHEN LOWER(f.tipo_degradacao) LIKE '%inunda%' THEN 'Floresta Inundada'
-                WHEN LOWER(f.tipo_degradacao) LIKE '%degrada%' THEN 'Desmatamento por Degradação Progressiva'
-                ELSE 'Outros'
-            END AS tipo_desmatamento,
-            -- COUNT(coluna) já ignora nulos e é mais eficiente que SUM(CASE...)
+     CASE
+			    WHEN f.tipo_degradacao = 'corte raso com solo exposto' THEN 'Corte Raso com Solo Exposto'
+			    WHEN f.tipo_degradacao = 'corte raso com vegetação' THEN 'Corte Raso com Vegetação'
+			    WHEN f.tipo_degradacao = 'desmatamento por degradação progressiva' THEN 'Desmatamento por Degradação Progressiva'
+			    WHEN f.tipo_degradacao = 'mineração' THEN 'Mineração'
+			    WHEN f.tipo_degradacao = 'floresta inundada' THEN 'Floresta Inundada'
+			    ELSE 'Outros'
+			END AS tipo_desmatamento,
             COUNT(f.area_km) AS qtd_ocorrencias,
             ROUND(SUM(f.area_km), 2) as total_area_desmatada_km
         FROM FatoDesmatamento f
